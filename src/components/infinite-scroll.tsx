@@ -7,11 +7,11 @@ import { animate, motion, useMotionValue } from "framer-motion";
 export default function InfiniteScroll() {
   const images = [
     "next-js.svg",
-    "next-js.svg",
-    "next-js.svg",
-    "next-js.svg",
-    "next-js.svg",
-    "next-js.svg",
+    "docker.svg",
+    "firebase.svg",
+    "node-js.svg",
+    "react-js.svg",
+    "typescript.svg"
   ];
   const ref = useRef<HTMLDivElement>(null);
 
@@ -38,14 +38,16 @@ export default function InfiniteScroll() {
   }, [ref, xTranslation]);
 
   return (
-    <motion.div
-      className="flex gap-4 w-fit absolute left-0	"
-      ref={ref}
-      style={{ x: xTranslation }}
-    >
-      {[...images, ...images].map((src, idx) => (
-        <ImageCard src={src} />
-      ))}
-    </motion.div>
+    <div className="w-full h-[100px] relative overflow-hidden" id="poop">
+      <motion.div
+        className="flex gap-4 w-fit absolute left-0"
+        ref={ref}
+        style={{ x: xTranslation }}
+      >
+        {[...images, ...images].map((src, idx) => (
+          <ImageCard src={src} />
+        ))}
+      </motion.div>
+    </div>
   );
 }
