@@ -1,0 +1,98 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: var(--code-background);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+}
+h2 {
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
+}
+h3 {
+  font-size: 1.3rem;
+  margin: 1.15rem 0;
+}
+h4 {
+  font-size: 1.2rem;
+  margin: 1.1rem 0;
+}
+h5 {
+  font-size: 1.15rem;
+  margin: 1.05rem 0;
+}
+h6 {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+  h4 {
+    font-size: 2.25rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.75rem;
+  }
+}
+
+p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+article a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+ol,
+ul {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+li {
+  margin: 10px 0;
+}
