@@ -24,7 +24,7 @@ export default function InfiniteScroll() {
     let controls;
 
     let width = ref.current.scrollWidth;
-    let finalPosition = -width / 2 - 16;
+    let finalPosition = -width / 2 - 64;
 
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
@@ -40,7 +40,7 @@ export default function InfiniteScroll() {
   return (
     <div className="w-full h-[100px] relative overflow-hidden" id="poop">
       <motion.div
-        className="flex gap-4 w-fit absolute left-0"
+        className="flex gap-16 w-fit absolute left-0"
         ref={ref}
         style={{ x: xTranslation }}
       >

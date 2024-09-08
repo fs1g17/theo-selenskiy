@@ -8,7 +8,7 @@ export default function ImageCard({ src }: { src: string }) {
         width={100}
         height={100}
         alt=""
-        style={{ objectFit: "scale-down" }}
+        style={{ width: 100, height: 100, objectFit: "contain" }}
       />
     </div>
   );
