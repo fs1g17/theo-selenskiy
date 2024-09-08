@@ -4,7 +4,6 @@ import "./globals.css";
 import "./fonts.css";
 import WidthContainer from "@/components/width-container";
 import Navbar from "@/components/navbar";
-import InfiniteScroll from "@/components/infinite-scroll";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,7 +36,6 @@ export default function RootLayout({
         <WidthContainer>
           <Navbar />
           {children}
-          <InfiniteScroll />
         </WidthContainer>
       </body>
     </html>
