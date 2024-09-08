@@ -1,5 +1,7 @@
 import InfiniteScroll from "@/components/infinite-scroll";
 import ProjectCard from "@/components/project-card";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,13 +10,28 @@ export default function Home() {
         <h1>Hi, I'm Theo</h1>
         <h5>Passionate full-stack developer</h5>
       </div>
-      <div className="w-full">
+      <div className="w-full flex flex-col">
         <h2>About Me</h2>
         <p>
           I love building stuff that solves people's pain points. I keep a blog
           about programming and maths, and occasionally post YouTube videos
           about programming.
         </p>
+
+        <div className="flex gap-x-8 mx-auto">
+          <Link
+            href="https://www.linkedin.com/in/fedor-selenskiy/"
+            target="_blank"
+          >
+            <Image src="linkedin.svg" width={50} height={50} alt="linkedin" />
+          </Link>
+          <Link href="https://medium.com/@fedor.selenskiy" target="_blank">
+            <Image src="medium.svg" width={50} height={50} alt="medium" />
+          </Link>
+          <Link href="https://www.youtube.com/@AquilexTalent" target="_blank">
+            <Image src="youtube.svg" width={50} height={50} alt="youtube" />
+          </Link>
+        </div>
       </div>
       <div className="w-full">
         <h2>Tech Stack</h2>
