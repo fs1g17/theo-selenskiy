@@ -20,7 +20,7 @@ export default function AnymateVideo() {
           src={"/videos/anymate-demo.mp4"}
           autoPlay
           muted
-          className="w-full aspect-auto"
+          className="w-full aspect-auto grayscale"
         />
       </div>
       <div>
