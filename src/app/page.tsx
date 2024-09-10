@@ -2,6 +2,7 @@ import InfiniteScroll from "@/components/infinite-scroll";
 import ProjectCard from "@/components/project-card";
 import Image from "next/image";
 import Link from "next/link";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -39,47 +40,7 @@ export default function Home() {
       </div>
       <div className="w-full">
         <h2>Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full">
-          <ProjectCard
-            project={{
-              projectTitle: "anymate.video",
-              projectDescription:
-                "Jira for teams of animators. A place to track progress of animation.",
-            }}
-          />
-          <ProjectCard
-            project={{
-              projectTitle: "starhaze.me",
-              projectDescription: "The simplest way to collect user feedback.",
-            }}
-          />
-          <ProjectCard
-            project={{
-              projectTitle: "sponsor spotter",
-              projectDescription:
-                "Competitor analysis tool for marketing agencies working with YouTubers",
-            }}
-          />
-          <ProjectCard
-            project={{
-              projectTitle: "wls pro",
-              projectDescription:
-                "Fully automated and AI driven public blog network",
-            }}
-          />
-          <ProjectCard
-            project={{
-              projectTitle: "flash format",
-              projectDescription: "Online image format converter",
-            }}
-          />
-          <ProjectCard
-            project={{
-              projectTitle: "mercante",
-              projectDescription: "User friendly RAG SaaS",
-            }}
-          />
-        </div>
+        <Projects />
       </div>
     </div>
   );

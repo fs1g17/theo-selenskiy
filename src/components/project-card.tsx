@@ -1,24 +1,20 @@
 import { Project } from "@/types/project";
-import { Button } from "./ui/button";
-import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import Link from "next/link";
 
 export default function ProjectCard({
-  project: { projectTitle, projectDescription },
+  project: { projectUrl, projectTitle, projectDescription },
 }: {
   project: Project;
 }) {
   return (
-    <Card className="w-full hover:shadow-custom-shadow">
-      <CardHeader>
-        <CardTitle>{projectTitle}</CardTitle>
-        <CardDescription>{projectDescription}</CardDescription>
-      </CardHeader>
-    </Card>
+    <Link href={projectUrl}>
+      <Card className="w-full hover:shadow-custom-shadow h-full">
+        <CardHeader>
+          <CardTitle>{projectTitle}</CardTitle>
+          <CardDescription>{projectDescription}</CardDescription>
+        </CardHeader>
+      </Card>
+    </Link>
   );
 }
