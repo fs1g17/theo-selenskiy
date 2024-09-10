@@ -12,6 +12,7 @@ export default function InfiniteScroll() {
     "node-js.svg",
     "react-js.svg",
     "typescript.svg",
+    "tailwind.svg"
   ];
   const ref = useRef<HTMLDivElement>(null);
 

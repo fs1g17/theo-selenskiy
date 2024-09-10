@@ -13,13 +13,13 @@ export default function Home() {
       </div>
       <div className="w-full flex flex-col">
         <h2>About Me</h2>
-        <p>
+        <p className="text-muted-foreground">
           I love building stuff that solves people's pain points. I keep a blog
           about programming and maths, and occasionally post YouTube videos
           about programming.
         </p>
 
-        <div className="flex gap-x-8 mx-auto">
+        <div className="flex gap-x-8 mx-auto mt-8 items-center">
           <Link
             href="https://www.linkedin.com/in/fedor-selenskiy/"
             target="_blank"
@@ -29,8 +29,8 @@ export default function Home() {
           <Link href="https://medium.com/@fedor.selenskiy" target="_blank">
             <Image src="medium.svg" width={50} height={50} alt="medium" />
           </Link>
-          <Link href="https://www.youtube.com/@AquilexTalent" target="_blank">
-            <Image src="youtube.svg" width={50} height={50} alt="youtube" />
+          <Link href="https://www.youtube.com/@AquilexTalent" target="_blank" className="h-fit">
+            <Image src="youtube.svg" width={50} height={50} alt="youtube" className="h-fit" />
           </Link>
         </div>
       </div>
