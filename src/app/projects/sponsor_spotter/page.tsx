@@ -10,7 +10,7 @@ export default function SponsorSpotter() {
           target="_blank"
           className="text-muted-foreground"
         >
-          Check it out! (opens in new tab)
+          Check out the live product! (opens in new tab)
         </Link>
       </div>
       <div>
