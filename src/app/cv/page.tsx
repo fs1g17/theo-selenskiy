@@ -1,7 +1,15 @@
+import { Download } from "lucide-react";
+
 export default function CV() {
   return (
     <div className="w-full flex-col gap-y-[200px] pb-10">
-      <h1>Fedor Selenskiy CV</h1>
+      <a href="/Fedor Selenskiy CV.pdf" download>
+        <div className="flex items-center gap-x-4">
+          <h1>Fedor Selenskiy CV</h1>
+          <Download />
+        </div>
+      </a>
+
       <div>
         <h3 className="w-full border-b-2 border-b-gray-500">Summary</h3>
         <p className="text-muted-foreground">
