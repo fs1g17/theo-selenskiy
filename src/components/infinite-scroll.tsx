@@ -11,7 +11,7 @@ export default function InfiniteScroll() {
     "firebase.svg",
     "node-js.svg",
     "react-js.svg",
-    "typescript.svg"
+    "typescript.svg",
   ];
   const ref = useRef<HTMLDivElement>(null);
 
@@ -24,7 +24,8 @@ export default function InfiniteScroll() {
     let controls;
 
     let width = ref.current.scrollWidth;
-    let finalPosition = -width / 2 - 64;
+    // motion.div has gap-16 = 64px, that's why we do -32px (half of that)
+    let finalPosition = -width / 2 - 32;
 
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
