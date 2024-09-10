@@ -1,5 +1,11 @@
-import MercanteCarousel from "@/components/mercante-carousel";
+import DemoImageCarousel from "@/components/demo-images-carousel";
 import Link from "next/link";
+
+const images = [
+  "/mercante/mercante-screenshot-1.png",
+  "/mercante/mercante-screenshot-2.png",
+  "/mercante/mercante-screenshot-3.png",
+];
 
 export default function Mercante() {
   return (
@@ -16,7 +22,7 @@ export default function Mercante() {
       </div>
       <div>
         <h2>Demo Reel</h2>
-        <MercanteCarousel />
+        <DemoImageCarousel images={images} />
       </div>
       <div>
         <h2>What problem does it solve?</h2>
