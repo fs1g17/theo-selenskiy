@@ -43,7 +43,7 @@ export default function FlashFormat() {
         <h2>Tech approach</h2>
         <p className="text-muted-foreground">
           The frontend is implemented with NextJs. The file conversion is done
-          with a firebase cloud function, using the 'sharp' library.
+          with a firebase cloud function, using the 'sharp' image processing library.
         </p>
       </div>
     </div>
