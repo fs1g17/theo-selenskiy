@@ -19,6 +19,7 @@ export default function StarHaze() {
           controls
           src={"/videos/starhaze-demo.mp4"}
           autoPlay
+          playsInline
           muted
           className="w-full aspect-auto grayscale"
         />

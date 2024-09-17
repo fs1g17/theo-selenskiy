@@ -19,6 +19,7 @@ export default function FlashFormat() {
           controls
           src={"/videos/flashformat-demo.mp4"}
           autoPlay
+          playsInline
           muted
           className="w-full aspect-auto grayscale"
         />
