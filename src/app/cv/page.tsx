@@ -40,25 +40,44 @@ export default function CV() {
             location="London (Remote)"
             title="Software Development Consultant"
             date="Oct 2022 - present"
-            description="Developing an SSR Node app with TypeScript for a greenfield project."
-            bulletPoints={[
-              "Took on the leading role for the front-end development in creating a server-side rendered app in Node with TypeScript.",
-              "Collaborated with User Research and Design to optimize user journey and accelerated prototype completion.",
-              "Empowered more junior colleagues to continuously improve with pair programming sessions and in-depth code reviews.",
-              "Ensured over 99% test coverage with Mocha test framework",
+            parts={[
+              {
+                description:
+                  "Building a healthcare solution that automates SR1 form submission for a greenfield project.",
+                bulletPoints: [
+                  "Took on the leading role for the front-end development in creating a server-side rendered app in Node with TypeScript.",
+                  "Collaborated with User Research and Design to optimize user journey and accelerated prototype completion.",
+                  "Empowered more junior colleagues to continuously improve with pair programming sessions and in-depth code reviews.",
+                  "Ensured over 99% test coverage with Mocha test framework",
+                ],
+              },
+              {
+                description:
+                  "Helped develop a SaaS PoC for monitoring company CO2 emissions for investors.",
+                bulletPoints: [
+                  "Contributed to front-end development of a web-app using React with TypeScript",
+                  "Ensured over 90% test coverage with Jest",
+                ],
+              },
             ]}
           />
+
           <WorkExperience
             job="1Spatial"
             location="Cambridge"
             title="Full-stack software developer"
             date="Sep 2021 - Oct 2022"
-            description="Help develop a user-friendly web application for interacting with the company’s business rules engine."
-            bulletPoints={[
-              "Building secure RESTful API endpoints using Spring (Java) which supports authentication using SAML and OAuth2.",
-              "Developing UI in React (TypeScript) for a web SaaS with users in 6 different industries spanning 4 countries.",
-              "Asserting a minimum of 80% test coverage using JUnit and Selenium testing frameworks.",
-              "Maintaining a PostgreSQL database.",
+            parts={[
+              {
+                description:
+                  "Help develop a user-friendly web application for interacting with the company’s business rules engine.",
+                bulletPoints: [
+                  "Building secure RESTful API endpoints using Spring (Java) which supports authentication using SAML and OAuth2.",
+                  "Developing UI in React (TypeScript) for a web SaaS with users in 6 different industries spanning 4 countries.",
+                  "Asserting a minimum of 80% test coverage using JUnit and Selenium testing frameworks.",
+                  "Maintaining a PostgreSQL database.",
+                ],
+              },
             ]}
           />
           <WorkExperience
@@ -66,10 +85,15 @@ export default function CV() {
             location="Remote"
             title="Software Developer"
             date="May 2021 - Jul 2021"
-            description="Contracted to develop a tool for for automating competitor analysis."
-            bulletPoints={[
-              "Automated YouTuber sponsor competitor analysis, speeding up to be less than 1 minute.",
-              "Removed the need to do the task by hand, skyrocketing productivity.",
+            parts={[
+              {
+                description:
+                  "Contracted to develop a tool for for automating competitor analysis.",
+                bulletPoints: [
+                  "Automated YouTuber sponsor competitor analysis, speeding up to be less than 1 minute.",
+                  "Removed the need to do the task by hand, skyrocketing productivity.",
+                ],
+              },
             ]}
           />
         </div>
@@ -99,36 +123,41 @@ export default function CV() {
   );
 }
 
+interface WorkExperiencePart {
+  description: string;
+  bulletPoints: string[];
+}
+
 function WorkExperience({
   job,
   location,
   title,
   date,
-  description,
-  bulletPoints,
+  parts,
 }: {
   job: string;
   location: string;
   title: string;
   date: string;
-  description: string;
-  bulletPoints: string[];
+  parts: WorkExperiencePart[];
 }) {
   return (
-    <div>
-      <p className="text-muted-foreground">
+    <div className="text-muted-foreground">
+      <p>
         <span className="font-bold italic">{job},</span> {location}:{" "}
         <span className="italic">{title}</span>
       </p>
-      <p className="text-muted-foreground">{date}</p>
-      <p className="text-muted-foreground italic">
-        {description}
-        <ul className="ml-4 marker:text-inherit list-disc	m-0">
-          {bulletPoints.map((point) => (
-            <li className="m-0">{point}</li>
-          ))}
-        </ul>
-      </p>
+      <p>{date}</p>
+      {parts.map(({ description, bulletPoints }) => (
+        <>
+          <p>{description}</p>
+          <ul className="ml-4 marker:text-inherit list-disc	m-0 italic">
+            {bulletPoints.map((point) => (
+              <li className="m-0">{point}</li>
+            ))}
+          </ul>
+        </>
+      ))}
     </div>
   );
 }
