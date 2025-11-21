@@ -3,6 +3,12 @@ import ProjectCard from "./project-card";
 
 const projects: Project[] = [
   {
+    projectUrl: "/job-tracker",
+    projectTitle: "JobTracker",
+    projectDescription:
+      "AI-powered web-app for automatically tracking job applications.",
+  },
+  {
     projectUrl: "/anymate.video",
     projectTitle: "anymate.video",
     projectDescription:

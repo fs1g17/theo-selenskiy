@@ -15,8 +15,8 @@ export default function CV() {
         <p className="text-muted-foreground">
           Passionate full-stack developer, experienced with React/NextJs
           (TypeScript) and NodeJs (TypeScript/JavaScript), with past experience
-          with Spring (Java), currently working as a consultant developer. Keep
-          a medium blog on React and maths, love all things tech related.
+          with Spring (Java), currently working as founding software developer.
+          Keep a medium blog on React and maths, love all things tech related.
         </p>
       </div>
 
@@ -36,10 +36,30 @@ export default function CV() {
         <h3 className="w-full border-b-2 border-b-gray-500">Work Experience</h3>
         <div className="flex flex-col gap-y-4">
           <WorkExperience
+            job="Ai-UP (Startup)"
+            location="Moscow (Remote)"
+            title="Founding Software Engineer & Shareholder"
+            date="Oct 2024 - present"
+            parts={[
+              {
+                description:
+                  "Working as part of a team of 3 founding engineers to create and scale a B2B lead-generation SaaS product.",
+                bulletPoints: [
+                  "Took a leading role in the front-end development of the web app with NextJs using TypeScript.",
+                  "Built a coherent design system with shadcn and TailwindCss.",
+                  "Minimized network calls by using react-query.",
+                  "Helped scale to over 6000 users, achieving a 44% conversion rate to paid users within a year.",
+                  "Delivered an MVP within 1 month, allowing the product to become profitable by the 2nd month.",
+                ],
+              },
+            ]}
+          />
+
+          <WorkExperience
             job="Capgemini Invent"
             location="London (Remote)"
             title="Software Development Consultant"
-            date="Oct 2022 - present"
+            date="Oct 2022 - Oct 2024"
             parts={[
               {
                 description:
@@ -76,22 +96,6 @@ export default function CV() {
                   "Developing UI in React (TypeScript) for a web SaaS with users in 6 different industries spanning 4 countries.",
                   "Asserting a minimum of 80% test coverage using JUnit and Selenium testing frameworks.",
                   "Maintaining a PostgreSQL database.",
-                ],
-              },
-            ]}
-          />
-          <WorkExperience
-            job="Impression Agency"
-            location="Remote"
-            title="Software Developer"
-            date="May 2021 - Jul 2021"
-            parts={[
-              {
-                description:
-                  "Contracted to develop a tool for for automating competitor analysis.",
-                bulletPoints: [
-                  "Automated YouTuber sponsor competitor analysis, speeding up to be less than 1 minute.",
-                  "Removed the need to do the task by hand, skyrocketing productivity.",
                 ],
               },
             ]}
