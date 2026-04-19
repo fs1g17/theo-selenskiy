@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import "./fonts.css";
 import WidthContainer from "@/components/width-container";
@@ -15,13 +16,18 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Theo Selenskiy",
   description: "My personal portfolio website",
 };
-
-//https://dribbble.com/shots/20753864-kawsar-design
 
 export default function RootLayout({
   children,
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} antialiased font-[family-name:var(--font-geist-sans)]`}
       >
         <WidthContainer>
           <Navbar />

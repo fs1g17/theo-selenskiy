@@ -9,6 +9,11 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			cormorant: ["var(--font-cormorant)", "Georgia", "serif"],
+  			sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+  			mono: ["var(--font-geist-mono)", "monospace"],
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -43,6 +48,7 @@ const config: Config = {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
+  			amber: '#e8a838',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',
@@ -56,9 +62,10 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-			boxShadow: {
-				"custom-shadow": '0 0px 16px 0 rgba(255, 255, 255, 0.2)',
-			},
+  		boxShadow: {
+  			'custom-shadow': '0 0 20px 0 rgba(232, 168, 56, 0.15)',
+  			'amber-glow': '0 0 24px 0 rgba(232, 168, 56, 0.2)',
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
