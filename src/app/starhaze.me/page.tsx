@@ -4,11 +4,7 @@ import ProjectSection from "@/components/project-section";
 export default function StarHaze() {
   return (
     <div className="w-full flex flex-col gap-y-10 pb-16">
-      <ProjectPageHeader
-        title="StarHaze"
-        externalHref="https://web.starhaze.me/"
-        externalLabel="Live product"
-      />
+      <ProjectPageHeader title="StarHaze" />
 
       <ProjectSection num="01" heading="Demo">
         <video
@@ -22,9 +18,7 @@ export default function StarHaze() {
       </ProjectSection>
 
       <ProjectSection num="02" heading="What problem does it solve?">
-        <p>
-          Collecting user feedback takes time away from building products.
-        </p>
+        <p>Collecting user feedback takes time away from building products.</p>
       </ProjectSection>
 
       <ProjectSection num="03" heading="What does it do?">

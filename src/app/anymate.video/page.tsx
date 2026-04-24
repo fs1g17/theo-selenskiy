@@ -4,11 +4,7 @@ import ProjectSection from "@/components/project-section";
 export default function AnymateVideo() {
   return (
     <div className="w-full flex flex-col gap-y-10 pb-16">
-      <ProjectPageHeader
-        title="Anymate.Video"
-        externalHref="https://web.anymate.video"
-        externalLabel="Live product"
-      />
+      <ProjectPageHeader title="Anymate.Video" />
 
       <ProjectSection num="01" heading="Demo">
         <video
@@ -37,7 +33,10 @@ export default function AnymateVideo() {
           Anymate is a tool that allows users to keep track of animation
           progress in one place. The users can:
         </p>
-        <ul className="ml-4 list-disc" style={{ color: "var(--muted-foreground)" }}>
+        <ul
+          className="ml-4 list-disc"
+          style={{ color: "var(--muted-foreground)" }}
+        >
           <li>create a project by uploading the shots</li>
           <li>update the shots as they&apos;re drawn out</li>
           <li>assign work to animators</li>
@@ -47,9 +46,9 @@ export default function AnymateVideo() {
 
       <ProjectSection num="04" heading="Tech approach">
         <p>
-          This app uses NextJs for the frontend, and firebase for cloud
-          storage and database. The actual video-rendering is done
-          in the browser using ffmpeg-wasm.
+          This app uses NextJs for the frontend, and firebase for cloud storage
+          and database. The actual video-rendering is done in the browser using
+          ffmpeg-wasm.
         </p>
       </ProjectSection>
     </div>

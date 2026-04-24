@@ -11,11 +11,7 @@ const images = [
 export default function Mercante() {
   return (
     <div className="w-full flex flex-col gap-y-10 pb-16">
-      <ProjectPageHeader
-        title="Mercante"
-        externalHref="https://mercante.ai/"
-        externalLabel="Website"
-      />
+      <ProjectPageHeader title="Mercante" />
 
       <ProjectSection num="01" heading="Demo Reel">
         <DemoImageCarousel images={images} />
