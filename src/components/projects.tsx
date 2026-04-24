@@ -3,10 +3,31 @@ import ProjectCard from "./project-card";
 
 const projects: Project[] = [
   {
+    projectUrl: "/video-clipper",
+    projectTitle: "Video Clipper",
+    projectDescription: "Turn a long YouTube video into 10+ Shorts in minutes.",
+  },
+  {
+    projectUrl: "/mercante",
+    projectTitle: "mercante",
+    projectDescription: "User friendly RAG SaaS",
+  },
+  {
+    projectUrl: "/wls_pro",
+    projectTitle: "wls pro",
+    projectDescription: "Fully automated and AI driven public blog network",
+  },
+  {
     projectUrl: "/job-tracker",
     projectTitle: "JobTracker",
     projectDescription:
       "AI-powered web-app for automatically tracking job applications.",
+  },
+  {
+    projectUrl: "/sponsor_spotter",
+    projectTitle: "sponsor spotter",
+    projectDescription:
+      "Competitor analysis tool for marketing agencies working with YouTubers",
   },
   {
     projectUrl: "/anymate.video",
@@ -20,25 +41,9 @@ const projects: Project[] = [
     projectDescription: "The simplest way to collect user feedback.",
   },
   {
-    projectUrl: "/sponsor_spotter",
-    projectTitle: "sponsor spotter",
-    projectDescription:
-      "Competitor analysis tool for marketing agencies working with YouTubers",
-  },
-  {
-    projectUrl: "/wls_pro",
-    projectTitle: "wls pro",
-    projectDescription: "Fully automated and AI driven public blog network",
-  },
-  {
     projectUrl: "/flash_format",
     projectTitle: "flash format",
     projectDescription: "Online image format converter",
-  },
-  {
-    projectUrl: "/mercante",
-    projectTitle: "mercante",
-    projectDescription: "User friendly RAG SaaS",
   },
   {
     projectUrl: "/okr-tracker",

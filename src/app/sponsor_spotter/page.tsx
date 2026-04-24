@@ -6,7 +6,7 @@ export default function SponsorSpotter() {
     <div className="w-full flex flex-col gap-y-10 pb-16">
       <ProjectPageHeader
         title="Sponsor Spotter"
-        externalHref="https://theo-sub.web.app/"
+        externalHref="https://youtube-scraper-lake.vercel.app/"
         externalLabel="Live product"
       />
 
@@ -31,12 +31,12 @@ export default function SponsorSpotter() {
 
       <ProjectSection num="03" heading="What does it do?">
         <p>
-          This web app allows marketing agencies to keep track of YouTuber&apos;s
-          video sponsors. When a YouTuber that is watched in the app uploads a
-          new video, the database is populated with links that were included in
-          the description. The user can then search all the videos in the
-          database that were sponsored by a given company. The result can be
-          downloaded as a CSV file.
+          This web app allows marketing agencies to keep track of
+          YouTuber&apos;s video sponsors. When a YouTuber that is watched in the
+          app uploads a new video, the database is populated with links that
+          were included in the description. The user can then search all the
+          videos in the database that were sponsored by a given company. The
+          result can be downloaded as a CSV file.
         </p>
       </ProjectSection>
 
