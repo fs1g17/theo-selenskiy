@@ -3,6 +3,11 @@ import ProjectCard from "./project-card";
 
 const projects: Project[] = [
   {
+    projectUrl: "/go-sandbox",
+    projectTitle: "Go Sandbox",
+    projectDescription: "A collaborative Go sandbox",
+  },
+  {
     projectUrl: "/video-clipper",
     projectTitle: "Video Clipper",
     projectDescription: "Turn a long YouTube video into 10+ Shorts in minutes.",
