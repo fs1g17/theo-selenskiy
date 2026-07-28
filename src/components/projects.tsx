@@ -3,6 +3,12 @@ import ProjectCard from "./project-card";
 
 const projects: Project[] = [
   {
+    projectUrl: "/runpod-s3-viewer",
+    projectTitle: "RunPod S3 Viewer",
+    projectDescription:
+      "A macOS-style desktop app to browse and download files from RunPod network volumes.",
+  },
+  {
     projectUrl: "/go-sandbox",
     projectTitle: "Go Sandbox",
     projectDescription: "A collaborative Go sandbox",
